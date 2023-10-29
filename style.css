@@ -105,6 +105,10 @@ main {
   color: var(--white);
 }
 
+.bg-desktop {
+  display: none;
+}
+
 .login > p {
   color: var(--gray-600);
 }
@@ -117,8 +121,12 @@ main {
 /* Desktop */
 
 @media (min-width: 1000px) {
+  body {
+    display: flex;
+  }
+
   header {
-    background-image: url("./imagens/bg-desktop.png");
+    background: none;
     justify-content: flex-start;
     padding-inline: 7rem;
   }
@@ -129,5 +137,14 @@ main {
 
   main {
     padding-inline: 7rem;
+  }
+
+  .conteudo {
+    width: 100%;
+  }
+
+  .bg-desktop {
+    display: block;
+    width: 100%;
   }
 }
